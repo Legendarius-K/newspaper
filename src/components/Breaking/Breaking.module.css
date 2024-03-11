@@ -1,0 +1,9 @@
+.breaking {
+    height: 30px;
+    background-color: rgb(236, 186, 110);
+    margin-bottom: 16px;
+}
+
+.breaking p {
+    margin: 0;
+}

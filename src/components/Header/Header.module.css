@@ -1,0 +1,13 @@
+.header {
+    padding: 16px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+    align-self: center;
+}

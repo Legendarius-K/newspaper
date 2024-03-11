@@ -1,0 +1,18 @@
+.category {
+
+}
+
+.categoryArticles {
+     display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.category h2 {
+    text-decoration: underline;
+    margin: 50px 0 0 0;
+}
+
+.category img {
+    
+}

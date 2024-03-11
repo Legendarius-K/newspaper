@@ -1,0 +1,17 @@
+.mainArticle {
+    border: 2px solid rgb(167, 167, 167);
+    flex: 0 0 calc(50% - 50px);
+    justify-self: center;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.mainArticle img {
+    width: 100%;
+}
+
+.mainArticle h5 {
+    align-self: center;
+}
