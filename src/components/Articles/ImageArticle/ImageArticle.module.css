@@ -1,5 +1,6 @@
 .imageArticle {
-    margin: 10px;
+    margin: 10px 0;
+    flex: 0 0 32%;
 }
 
 .imageArticle img {

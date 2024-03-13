@@ -1,9 +1,38 @@
 .breaking {
     height: 30px;
-    background-color: rgb(236, 186, 110);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(167, 167, 167);
     margin-bottom: 16px;
+    display: flex;
+    
 }
 
 .breaking p {
     margin: 0;
+}
+
+.breaking h4 {
+    margin: 0;
+    padding: 0 8px;
+    font-weight: 400;
+}
+
+.breakingHeadline {
+    min-width: 120px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.breakingArticles {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.breakingArticle { 
+    padding: 0 15px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
 }

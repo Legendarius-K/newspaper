@@ -1,13 +1,20 @@
 .header {
-    padding: 16px;
-    background-color: aquamarine;
+    padding: 16px 48px;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .header h1 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 2.5rem;
+    /* text-align: center; */
     margin: 0;
-    align-self: center;
+    /* align-self: center; */
+    font-family: chomsky;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

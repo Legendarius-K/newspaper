@@ -7,7 +7,7 @@ const ImageArticle = ({image, headline, deck }) => {
         <div className={styles.imageArticle}>
             <img src={MyImage} alt={headline} width="100px" height="auto"/>
             <h4>{mockData.headline}</h4>
-            <p><span>{mockData.deck}</span></p>
+            <p>{mockData.deck}</p>
         </div>
     )
 }

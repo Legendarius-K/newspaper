@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-    <Header title="News of the World" />
+    <Header title="News For Today" />
     <Nav />
     <MainContent>
       

@@ -1,0 +1,10 @@
+.phone {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(167, 167, 167);
+    height: 30px;
+}
+
+.phone > * {
+    margin: 0 8px;
+}

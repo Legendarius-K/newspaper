@@ -7,7 +7,7 @@ const Header = ({title}) => {
         <header className={styles.header}>
             <Social />
             <h1>{title}</h1>
-            <Phone number="070070070" />
+            <Phone number="+420(0)70070" />
         </header>
     )
 }
