@@ -1,14 +1,14 @@
 import RecentArticle from "../Articles/RecentArticle"
 import styles from "./RecentNews.module.css"
+import { filteredFourArticles } from "../../data/data"
+import { recentArticles } from "../../data/data"
 
-const RecentNews = () => {
+const RecentNews = ({article}) => {
     return (
         <div className={styles.recent}>
             <h3>Recent News</h3>
-            <RecentArticle />
-            <RecentArticle />
-            <RecentArticle />
-            <RecentArticle />
+            
+            {recentArticles.map((article, index) => <RecentArticle key={index} {...article}/>)}
         </div>
     )
 }

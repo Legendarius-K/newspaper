@@ -35,10 +35,111 @@ export const articles = [
     new Article("Bright Lights", "Local Theater Group to Debut New Play", `The [Theater Group Name] is excited to announce the upcoming debut of their new play, "[Play Title]." The play, written by local playwright [Playwright's Name], tells the story of [brief plot summary]. "We are thrilled to be able to bring this new play to our community," said [Theater Group Director's Name]. "It's a powerful and moving story that we think will resonate with audiences of all ages." The play will be performed at the [Theater Name] from [Start Date] to [End Date]. Tickets are on sale now and can be purchased online or at the box office. For more information, please visit the theater group's website at [Website Address].`, "theatre.jpeg", "entertainment")
 ]
 
-export const mainArticle = articles[Math.floor(Math.random() * articles.length)];
+const removeArticle = targetArray => {
+    const randomIndex = Math.floor(Math.random() * targetArray.length);
+    const randomArticle = targetArray[randomIndex];
+    targetArray.splice(targetArray.indexOf(randomArticle), 1);
+    return randomArticle;
+}
+
+export const mainArticle = removeArticle(articles)
 
 export const mockData = articles[0]
 
-export const sportsArticles = articles.filter(e => e.category === "sport");
+export const sportsArticles = articles.filter(article => article.category === "sport");
+const shuffledSportsArticles = sportsArticles.sort(() => Math.random() - 0.5);
+const sportArticlesTwo = []
+const sportArticlesThree = []
 
+for(let i = 0; i < 2; i++) {
+    sportArticlesTwo.push(shuffledSportsArticles[i])
+}
+
+shuffledSportsArticles.splice(0, 2)
+
+for(let i = 0; i < 3; i++) {
+    sportArticlesThree.push(shuffledSportsArticles[i])
+}
+
+shuffledSportsArticles.splice(0, 3)
+
+export { sportArticlesTwo }
+export { sportArticlesThree }
+
+
+
+export const swedenArticles = articles.filter(article => article.category === "sweden");
+const shuffledSwedenArticles = swedenArticles.sort(() => Math.random() - 0.5);
+const swedenArticlesThree = []
+
+for(let i = 0; i < 3; i++) {
+    swedenArticlesThree.push(shuffledSwedenArticles[i])
+}
+
+shuffledSwedenArticles.splice(0, 3)
+
+export { swedenArticlesThree }
+
+
+
+
+export const crimeArticles = articles.filter(article => article.category === "crime");
+const shuffledCrimeArticles = crimeArticles.sort(() => Math.random() - 0.5);
+const crimeArticlesThree = []
+
+for(let i = 0; i < 3; i++) {
+    crimeArticlesThree.push(shuffledCrimeArticles[i])
+}
+
+shuffledCrimeArticles.splice(0, 3)
+
+export { crimeArticlesThree }
+
+
+
+
+export const worldArticles = articles.filter(article => article.category === "world");
+const shuffledWorldArticles = worldArticles.sort(() => Math.random() - 0.5);
+const worldArticlesThree = []
+
+for(let i = 0; i < 3; i++) {
+    worldArticlesThree.push(shuffledWorldArticles[i])
+}
+
+shuffledWorldArticles.splice(0, 3)
+
+export { worldArticlesThree }
+
+
+
+
+export const entertainmentArticles = articles.filter(article => article.category === "entertainment");
+const shuffledEntertainmentArticles = entertainmentArticles.sort(() => Math.random() - 0.5);
+const entertainmentArticlesThree = []
+
+for(let i = 0; i < 3; i++) {
+    entertainmentArticlesThree.push(shuffledEntertainmentArticles[i])
+}
+
+shuffledEntertainmentArticles.splice(0, 3)
+
+export { entertainmentArticlesThree }
+
+
+
+const filteredAllArticles = [...shuffledCrimeArticles, ...shuffledEntertainmentArticles, ...shuffledSwedenArticles, ...shuffledWorldArticles];
+const shuffledFilteredArticles = filteredAllArticles.sort(() => Math.random() - 0.5);
+export const filteredFourArticles = shuffledFilteredArticles.slice(0, 4);
+export { shuffledFilteredArticles }
+
+let recentArticles = []
+
+recentArticles.push(removeArticle(shuffledCrimeArticles))
+recentArticles.push(removeArticle(shuffledWorldArticles))
+recentArticles.push(removeArticle(shuffledEntertainmentArticles))
+recentArticles.push(removeArticle(shuffledSwedenArticles))
+
+export const remainingArticles = [...shuffledCrimeArticles, ...shuffledWorldArticles, ...shuffledEntertainmentArticles, ...shuffledSwedenArticles, ...shuffledSportsArticles]
+
+export { recentArticles }
 
