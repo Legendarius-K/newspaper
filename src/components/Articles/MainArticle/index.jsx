@@ -1,14 +1,14 @@
 import styles from "./MainArticle.module.css"
-import { mockData } from "../../../data/data"
-import MyImage from "../../../assets/ashes.jpeg"
+import { getImageURL } from "../../../utils/functions"
 
-const MainArticle = ({headline, deck, story, image, category}) => {
+
+const MainArticle = ({headline, deck, story, category, image}) => {
     return (
         <div className={styles.mainArticle}>
-            <img src={MyImage} alt={headline} width="300px" height="auto"/>
-            <h2>{mockData.headline} - {mockData.deck}</h2>
-            <p>{mockData.story.slice(0, 200)}</p>
-            <h5>Category: {mockData.category}</h5>
+            <img src={getImageURL(image)} alt={headline} width="300px" height="auto"/>
+            <h2>{headline} - {deck}</h2>
+            <p>{story.slice(0, 300)}</p>
+            <h5>Category: {category}</h5>
         </div>
     )
 }

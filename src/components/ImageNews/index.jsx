@@ -11,4 +11,4 @@ const ImageNews = () => {
     )
 }
 
-export default ImageNews
+export default ImageNews 
