@@ -13,4 +13,4 @@ const Category = ({category, article}) => {
     )
 }
 
-export default Category
+export default Category 

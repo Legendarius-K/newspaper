@@ -1,10 +1,10 @@
 import { remainingArticles } from '../../data/data';
 import styles from './BreakingArticle.module.css'
 
-const BreakingArticle = ({headline}) => {
+const BreakingArticle = ({headline, deck}) => {
     return (
         <div className={styles.breakingArticle}>
-            <p>{headline}</p>
+            <p>{headline}: {deck}</p>
             <p className={styles.arrow}>&#8594;</p>
         </div>
         

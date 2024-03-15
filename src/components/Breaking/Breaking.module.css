@@ -28,11 +28,16 @@
 .breakingArticles {
     display: flex;
     align-items: center;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .breakingArticle { 
     padding: 0 15px;
     flex-wrap: nowrap;
     white-space: nowrap;
+    /* overflow-y: scroll; */
+}
+
+.breakingArticles::-webkit-scrollbar {
+    display: none;
 }
