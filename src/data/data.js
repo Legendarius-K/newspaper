@@ -41,6 +41,13 @@ const removeArticle = targetArray => {
     targetArray.splice(targetArray.indexOf(randomArticle), 1);
     return randomArticle;
 }
+export const sportsArticlesAll = articles.filter(article => article.category === "sport");
+export const swedenArticlesAll = articles.filter(article => article.category === "sweden");
+export const worldArticlesAll = articles.filter(article => article.category === "world");
+export const crimeArticlesAll = articles.filter(article => article.category === "crime");
+export const entertainmentArticlesAll = articles.filter(article => article.category === "entertainment");
+
+
 
 export const mainArticle = removeArticle(articles)
 
@@ -69,6 +76,7 @@ export { sportArticlesThree }
 
 
 export const swedenArticles = articles.filter(article => article.category === "sweden");
+
 const shuffledSwedenArticles = swedenArticles.sort(() => Math.random() - 0.5);
 const swedenArticlesThree = []
 
@@ -84,6 +92,7 @@ export { swedenArticlesThree }
 
 
 export const crimeArticles = articles.filter(article => article.category === "crime");
+
 const shuffledCrimeArticles = crimeArticles.sort(() => Math.random() - 0.5);
 const crimeArticlesThree = []
 
@@ -99,6 +108,7 @@ export { crimeArticlesThree }
 
 
 export const worldArticles = articles.filter(article => article.category === "world");
+
 const shuffledWorldArticles = worldArticles.sort(() => Math.random() - 0.5);
 const worldArticlesThree = []
 
@@ -114,6 +124,7 @@ export { worldArticlesThree }
 
 
 export const entertainmentArticles = articles.filter(article => article.category === "entertainment");
+
 const shuffledEntertainmentArticles = entertainmentArticles.sort(() => Math.random() - 0.5);
 const entertainmentArticlesThree = []
 
@@ -142,4 +153,5 @@ recentArticles.push(removeArticle(shuffledSwedenArticles))
 export const remainingArticles = [...shuffledCrimeArticles, ...shuffledWorldArticles, ...shuffledEntertainmentArticles, ...shuffledSwedenArticles, ...shuffledSportsArticles]
 
 export { recentArticles }
+
 

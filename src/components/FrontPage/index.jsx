@@ -1,4 +1,4 @@
-import styles from "./MainContent.module.css"
+import styles from "./FrontPage.module.css"
 import TopPage from "../TopPage"
 import Breaking from "../Breaking"
 import Category from "../Category"
@@ -8,8 +8,10 @@ import { crimeArticlesThree } from "../../data/data"
 import { worldArticlesThree } from "../../data/data"
 import { entertainmentArticlesThree } from "../../data/data"
 import ImageArticle from "../Articles/ImageArticle"
+import { useState } from "react"
 
-const MainContent = () => {
+const FrontPage = () => {
+
     return (
         <section className={styles.mainContent}>
             <Breaking />
@@ -23,4 +25,4 @@ const MainContent = () => {
     )
 }
 
-export default MainContent
+export default FrontPage
