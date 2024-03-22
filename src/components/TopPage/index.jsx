@@ -4,12 +4,12 @@ import RecentNews from "../RecentNews"
 import styles from "./TopPage.module.css"
 import { mainArticle } from "../../data/data"
 
-const TopPage = () => {
+const TopPage = ({ updateFunction }) => {
     return (
         <div className={styles.topPage}>
-            <RecentNews />
-            <MainArticle {...mainArticle}/>
-            <ImageNews />
+            <RecentNews updateFunction={updateFunction} />
+            <MainArticle updateFunction={updateFunction} {...mainArticle}/>
+            <ImageNews updateFunction={updateFunction}/>
         </div>
     )
 }

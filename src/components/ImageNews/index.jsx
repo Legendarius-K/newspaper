@@ -4,11 +4,11 @@ import { sportArticlesTwo } from "../../data/data"
 import ImageArticle from "../Articles/ImageArticle"
 import styles from "./ImageNews.module.css"
 
-const ImageNews = () => {
+const ImageNews = ({updateFunction}) => {
 
     return (
         <div className={styles.imageNews}>
-            {sportArticlesTwo.map((article, index) =>  <ImageArticle key={index} {...article}/>)}
+            {sportArticlesTwo.map((article, index) =>  <ImageArticle key={index} {...article} updateFunction={updateFunction} />)}
         </div>
     )
 }

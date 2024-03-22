@@ -10,13 +10,13 @@ import { entertainmentArticlesThree } from "../../data/data"
 import ImageArticle from "../Articles/ImageArticle"
 import { useState } from "react"
 
-const FrontPage = () => {
+const FrontPage = ({ updateFunction }) => {
 
     return (
         <section className={styles.mainContent}>
-            <Breaking />
-            <TopPage />
-            <Category category="Sweden" article={swedenArticlesThree.map((article, index) =>  <ImageArticle key={index} {...article}/>)} />
+            <Breaking updateFunction={updateFunction} />
+            <TopPage  updateFunction={updateFunction}/>
+            <Category  category="Sweden" article={swedenArticlesThree.map((article, index) =>  <ImageArticle key={index} {...article}/>)} />
             <Category category="Sports" article={sportArticlesThree.map((article, index) =>  <ImageArticle key={index} {...article}/>)} />
             <Category category="Crime" article={crimeArticlesThree.map((article, index) =>  <ImageArticle key={index} {...article}/>)} />
             <Category category="World" article={worldArticlesThree.map((article, index) =>  <ImageArticle key={index} {...article}/>)}/>

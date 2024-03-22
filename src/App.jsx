@@ -5,6 +5,7 @@ import Nav from './components/Nav'
 import FrontPage from './components/FrontPage'
 import TopPage from './components/TopPage'
 import Footer from './components/Footer'
+import CurrentArticle from './components/CurrentArticle'
 import SelectedCategory from './components/SelectedCategory'
 import { swedenArticlesAll, sportsArticlesAll, crimeArticlesAll, worldArticlesAll, entertainmentArticlesAll } from './data/data'
 
@@ -19,14 +20,28 @@ const ArticleArrays = {
 function App() {
 
   const [selectedCategory, setSelectedCategory] = useState(null)
-console.log(selectedCategory);
+  const [currentArticle, setCurrentArticle] = useState(null)
+  console.log('currentArticle: ', currentArticle);
+
+
+  
+  console.log(selectedCategory);
+
   return (
     <>
     <Header title="News For Today" />
-    <Nav setSelectedCategory={setSelectedCategory}/>
-    {!selectedCategory && <FrontPage /> }
-    {selectedCategory && <SelectedCategory category={ArticleArrays[selectedCategory]}/>}
+    <Nav setSelectedCategory={setSelectedCategory} updateFunction={setCurrentArticle}/>
+
+    {
+      currentArticle ? <CurrentArticle article={currentArticle}/>
+      : selectedCategory ? <SelectedCategory updateFunction={setSelectedCategory} category={ArticleArrays[selectedCategory]}/>
+      : <FrontPage updateFunction={setCurrentArticle} />
+    }
     <Footer />
+
+    {/* {!selectedCategory && <FrontPage /> }
+    {selectedCategory && <SelectedCategory category={ArticleArrays[selectedCategory]}/>}
+    <Footer /> */}
     </>
   )
 }

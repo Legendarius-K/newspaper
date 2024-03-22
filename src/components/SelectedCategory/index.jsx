@@ -3,10 +3,10 @@ import Category from '../Category';
 import styles from './SelectedCategory.module.css'
 
 
-const SelectedCategory = ({ category }) => {
+const SelectedCategory = ({ category, updateFunction }) => {
     return (
         <div className={styles.categoryArticle}>
-            {category.map((article, index) => <MainArticle key={index} {...article}/>)}
+            {category.map((article, index) => <MainArticle updateFunction={updateFunction} key={index} {...article}/>)}
         </div>
     )
 };
