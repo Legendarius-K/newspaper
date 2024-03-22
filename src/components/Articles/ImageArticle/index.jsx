@@ -12,4 +12,4 @@ const ImageArticle = ({image, headline, deck }) => {
     )
 }
 
-export default ImageArticle
+export default ImageArticle 

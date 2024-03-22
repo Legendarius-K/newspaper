@@ -12,3 +12,4 @@ const NavItem = ({ category, setSelectedCategory }) => {
 };
 
 export default NavItem
+ 

@@ -32,3 +32,4 @@ console.log(selectedCategory);
 }
 
 export default App
+ 

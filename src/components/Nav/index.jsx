@@ -14,4 +14,4 @@ const Nav = ({ setSelectedCategory }) => {
     )
 }
 
-export default Nav
+export default Nav 
