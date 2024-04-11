@@ -2,3 +2,11 @@
     margin: 3px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 560px) {
+    
+    .social {
+        display: none;
+    }
+
+}

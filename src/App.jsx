@@ -29,22 +29,18 @@ function App() {
 
   return (
     <>
-    <Header title="News For Today" />
+    <Header title="The Newspaper" />
     <Nav setSelectedCategory={setSelectedCategory} updateFunction={setCurrentArticle}/>
 
     {
       currentArticle ? <CurrentArticle article={currentArticle}/>
-      : selectedCategory ? <SelectedCategory updateFunction={setSelectedCategory} category={ArticleArrays[selectedCategory]}/>
+      : selectedCategory ? <SelectedCategory updateFunction={setCurrentArticle} category={ArticleArrays[selectedCategory]}/>
       : <FrontPage updateFunction={setCurrentArticle} />
     }
     <Footer />
-
-    {/* {!selectedCategory && <FrontPage /> }
-    {selectedCategory && <SelectedCategory category={ArticleArrays[selectedCategory]}/>}
-    <Footer /> */}
     </>
   )
 }
 
 export default App
- 
+  

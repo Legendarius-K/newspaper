@@ -1,12 +1,73 @@
-.navbar {
+.navbarContainer {
     padding: 5px;
     height: 40px;
     background-color: black;
+     
+}
+
+.navbar {
     color: white;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-evenly;  
 }
 
+.hamburgerImg {
+    display: none;
+}
+
+.nav {
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        display: none;
+    }
+    
+    .hamburgerImg {
+        display: inherit;
+        transition: 300ms;
+    }
+
+    .hamburger {
+        display: inherit;
+        background-color: rgb(233, 230, 230, 0.4);
+        backdrop-filter: blur(10px);
+        width: 200px;
+        padding: 19px;
+        position: absolute;
+        z-index: 10;
+        left: -200px;
+        transition: 300ms;
+    }
+
+    .visible {
+        left: 0;
+    }
+
+    .overlay {
+        height: 150vh;
+        width: 100vh;
+        position: fixed;
+        top: -100px;
+        z-index: 9;
+        display: none;
+    }
+
+    .showOverlay {
+        display: inherit;
+    }
+
+    .spin {
+        transform: rotateY(180deg)
+    }
+
+}
 
 

@@ -1,9 +1,10 @@
 import styles from './CurrentArticle.module.css'
 
-const CurrentArticle = ({article}) => {
+const CurrentArticle = ({article }) => {
     return (
         <div className={styles.currentArticle}>
-            {article.headline}
+            <h2>{article.headline}</h2>
+            <p>{article.deck}</p>
         </div>
     )
 };

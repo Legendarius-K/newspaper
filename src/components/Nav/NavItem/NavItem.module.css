@@ -3,10 +3,10 @@
     justify-content: space-evenly;
     align-items: center;
     width: 95%;
-    
+
 }
 
-.navItem{
+.navItem {
     margin: 0;
     list-style: none;
 }
@@ -21,4 +21,16 @@
 .navItem:hover {
     background-color: white;
     color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 768px) {
+
+    .navItem {
+        margin: 10px 0;
+    }
+
+        .navItem::before {
+            content: '– ';
+        }
+
 }

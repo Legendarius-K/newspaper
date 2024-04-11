@@ -1,10 +1,11 @@
 import styles from './NavItem.module.css'
 
-const NavItem = ({ category, setSelectedCategory, updateFunction }) => {
+const NavItem = ({ category, setSelectedCategory, updateFunction, hideBurger }) => {
 
     const handleClick = () => {
         {category=== "Home" ? setSelectedCategory(null) : setSelectedCategory(category.toLowerCase())}
         updateFunction(null)
+        hideBurger(false)
     }
 
     return (

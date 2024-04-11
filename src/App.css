@@ -31,6 +31,8 @@ body {
 #root {
   display: flex;
   flex-direction: column;
+  background-image: url('../src/assets/white-paper-texture.jpg');
+  background-size: contain;
 }
 
 span {
