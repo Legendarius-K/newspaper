@@ -6,8 +6,8 @@ const Footer = () => {
         <footer className={styles.footer}>
             <div className={styles.topContainer}>
                 <div className={styles.info}>
-                    <h3>News For Today</h3>
-                    <p>News For Today delivers comprehensive coverage of global events, politics, technology, entertainment, and lifestyle.</p>
+                    <h3>The Newspaper</h3>
+                    <p>The Newspaper delivers comprehensive coverage of global events, politics, technology, entertainment, and lifestyle.</p>
                 </div>
                 <div className={styles.getNews}>
                     <h4>Get News</h4>
