@@ -12,4 +12,5 @@
 
 .imageArticle h4 {
     margin: 10px;
+    cursor: pointer;
 }

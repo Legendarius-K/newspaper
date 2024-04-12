@@ -72,6 +72,10 @@
     padding: 16px 0;
 }
 
+.bottomContainer p {
+    margin: 10px;
+}
+
 .legal {
     display: flex;
 }

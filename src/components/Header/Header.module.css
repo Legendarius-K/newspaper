@@ -10,9 +10,7 @@
 
 .header h1 {
     font-size: 2.5rem;
-    /* text-align: center; */
     margin: 0;
-    /* align-self: center; */
     font-family: chomsky;
     position: absolute;
     top: 50%;
@@ -28,8 +26,8 @@
 
     .header h1 {
         position: relative;
-        transform: translate(0%, 0%);
-        transform: translateX(-50%);
+        transform: translate(-50%, 0%);
+        
     }
 
 }

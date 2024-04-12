@@ -7,7 +7,7 @@ const Footer = () => {
             <div className={styles.topContainer}>
                 <div className={styles.info}>
                     <h3>News For Today</h3>
-                    <p>News For Today delivers comprehensive coverage of global events, politics, technology, entertainment, and lifestyle. With incisive reporting and engaging features, it keeps readers informed and entertained.</p>
+                    <p>News For Today delivers comprehensive coverage of global events, politics, technology, entertainment, and lifestyle.</p>
                 </div>
                 <div className={styles.getNews}>
                     <h4>Get News</h4>

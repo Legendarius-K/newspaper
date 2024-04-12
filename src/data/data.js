@@ -1,3 +1,6 @@
+
+
+
 function Article(headline, deck, story, image, category) {
     this.headline = headline;
     this.deck = deck;

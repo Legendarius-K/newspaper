@@ -1,3 +1,7 @@
 .recentArticle {
     border-bottom: solid 2px rgb(167, 167, 167);
 }
+
+.recentArticle p {
+    cursor: pointer;
+}

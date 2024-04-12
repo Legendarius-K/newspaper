@@ -1,0 +1,42 @@
+.currentArticle {
+    display: flex;
+    flex-direction: column;
+    /* padding: 15px; */
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.currentArticle img {
+    align-self: center;
+
+    width: 100%;
+}
+
+.currentArticle h2 {
+    text-align: center;
+}
+
+.backArrow {
+    font-size: 2rem;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.currentArticle .article {
+    margin: 15px;
+}
+
+@media screen and (min-width: 1025px) {
+
+    .currentArticle {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .currentArticle img {
+        width: 45%;
+    }
+
+    
+
+}

@@ -15,3 +15,7 @@
 .mainArticle h5 {
     align-self: center;
 }
+
+.mainArticle h2 {
+    cursor: pointer;
+}

@@ -26,11 +26,13 @@
 @media screen and (max-width: 768px) {
 
     .navItem {
-        margin: 10px 0;
+        margin: 15px 0;
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 
-        .navItem::before {
-            content: '– ';
-        }
+    .navItem::before {
+        content: '– ';
+    }
 
 }

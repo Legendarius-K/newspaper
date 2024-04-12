@@ -17,7 +17,9 @@
 }
 
 .nav {
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .hamburger {
@@ -33,17 +35,18 @@
     .hamburgerImg {
         display: inherit;
         transition: 300ms;
+        margin-left: 5px;
     }
 
     .hamburger {
         display: inherit;
         background-color: rgb(233, 230, 230, 0.4);
         backdrop-filter: blur(10px);
-        width: 200px;
+        width: 230px;
         padding: 19px;
         position: absolute;
         z-index: 10;
-        left: -200px;
+        left: -240px;
         transition: 300ms;
     }
 
